@@ -1,0 +1,11 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: nmro
+  labels:
+    name: nmro
+spec:
+  path: "/"
+  to:
+    kind: Service
+    name: nmro

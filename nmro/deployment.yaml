@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    name: nmro
+  name: nmro
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      name: nmro
+  template:
+    metadata:
+      labels:
+        name: nmro
+    spec:
+      containers:
+      - image: quay.io/charrels/nmro:latest
+        name: nmro
+        ports:
+        - containerPort: 8080
+          name: http-server
