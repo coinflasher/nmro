@@ -30,7 +30,7 @@ spec:
                 allowHostNetwork: false
                 allowHostPID: false
                 allowHostPorts: false
-                allowPrivilegedContainer: true
+                allowPrivilegedContainer: false
                 allowPrivilegeEscalation: true
                 apiVersion: security.openshift.io/v1
                 defaultAddCapabilities: []
